@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <a class="navbar-item" href="https://klp.github.io/our-mutual-language-processor/">
           <img src="31670619.png" width="27" height="27">
         </a>
       
@@ -27,11 +27,6 @@
           <a class="navbar-item">
             Home
           </a>
-        
-          <a class="navbar-item">
-            Documentation
-          </a>
-        
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
               Experiments
@@ -42,16 +37,16 @@
                 Part of Speech Counts
               </a>
               <a class="navbar-item">
-                Jobs
-              </a>
-              <a class="navbar-item">
-                Contact
+                Another experiment?
               </a>
               <hr class="navbar-divider">
               <a class="navbar-item">
                 Report an issue
               </a>
             </div>
+            <a class="navbar-item">
+              About
+            </a>
           </div>
         </div>
             </div>
@@ -75,24 +70,26 @@
         </div>
       </div>
     </div> -->
-    <h2>Adjectives</h2>
-        <div class="container">
-            <div id="adjectives"></div>
-        </div>
-    <h2>Adverbs</h2>
-        <div class="container">
-            <div id="adverbs"></div>
-        </div>
-    <h2>Nouns</h2>
-        <div class="container">
-            <div id="nouns"></div>
-        </div>
-    <h2>Verbs</h2>
-        <div class="container">
-            <div id="verbs"></div>
+    <div class="content">
+      <h2>Adjectives</h2>
+          <div class="container">
+              <div id="adjectives"></div>
+          </div>
+      <h2>Adverbs</h2>
+          <div class="container">
+              <div id="adverbs"></div>
+          </div>
+      <h2>Nouns</h2>
+          <div class="container">
+              <div id="nouns"></div>
+          </div>
+      <h2>Verbs</h2>
+          <div class="container">
+              <div id="verbs"></div>
+          </div>
         </div>
     <script src="text.js" defer></script>
-    <script src="https://unpkg.com/compromise@latest/builds/compromise.js"></script>
+    <script src="https://unpkg.com/compromise@14.8.0/builds/compromise.js" defer></script>
     <script src="app.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="

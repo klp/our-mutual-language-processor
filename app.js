@@ -1,4 +1,4 @@
-const doc = nlp(originalText);
+const doc = nlp(removedText);
 const adjectives = doc.adjectives().out('array');
 const adverbs = doc.adverbs().out('array');
 const nouns = doc.nouns().out('array');
@@ -24,6 +24,22 @@ const adjectiveCount = outputAdjectives.length;
 const adverbCount = outputAdverbs.length;
 const nounCount = outputNouns.length;
 const verbCount = outputVerbs.length;
+
+outputAdjectives.forEach(function(adjective) {
+    $("#adjectives").append(adjective + "    ");
+});
+
+outputAdverbs.forEach(function(adverb) {
+    $("#adverbs").append(adverb + "    ");
+});
+
+outputNouns.forEach(function(noun) {
+    $("#nouns").append(noun + "    ");
+});
+
+outputVerbs.forEach(function(verb) {
+    $("#verbs").append(verb + "    ");
+});
 
 console.log(`# of adjectives: ${adjectiveCount}`);
 console.log(`# of adverbs: ${adverbCount}`);

@@ -38420,3 +38420,23 @@ as much as THEY want of the other honour--Mortimer sees Twemlow home,
 shakes hands with him cordially at parting, and fares to the Temple,
 gaily.
 `
+
+const lowerCaseText = originalText.toLowerCase();
+
+const removedText = lowerCaseText
+    .replaceAll('"', '')
+    .replaceAll('--', '')
+    .replaceAll('?', '')
+    .replaceAll(")", '')
+    .replaceAll('!', '')
+    .replaceAll('.', '')
+    .replaceAll(',', '')
+    .replaceAll(';', '')
+    .replaceAll('_', '')
+    .replaceAll('-', '')
+    .replaceAll('—', '')
+    .replaceAll('“', '')
+    .replaceAll('”', '')
+    .replaceAll('(', '')
+    .replaceAll('’', '')
+    .replaceAll('‘', '');

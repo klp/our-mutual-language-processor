@@ -21,19 +21,19 @@ const outputVerbs = verbs.map(function(verb){
 });
 
 outputAdjectives.forEach(function(adjective) {
-    $("#adjectives").append(adjective + " ");
+    $("#adjectives").append(adjective + ", ");
 });
 
 outputAdverbs.forEach(function(adverb) {
-    $("#adverbs").append(adverb + " ");
+    $("#adverbs").append(adverb + ", ");
 });
 
 outputNouns.forEach(function(noun) {
-    $("#nouns").append(noun + " ");
+    $("#nouns").append(noun + ", ");
 });
 
 outputVerbs.forEach(function(verb) {
-    $("#verbs").append(verb + " ");
+    $("#verbs").append(verb + ", ");
 });
 
 const adjectiveCount = outputAdjectives.length;

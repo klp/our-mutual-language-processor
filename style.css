@@ -6,6 +6,7 @@
 
 .box {
     margin: 0 auto;
+    max-height: 145px;  /* not the prettiest solution */
 }
 
 #adjective-count, #adverb-count, #noun-count, #verb-count {

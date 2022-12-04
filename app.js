@@ -36,10 +36,20 @@ outputVerbs.forEach(function(verb) {
     $("#verbs").append(verb + " ");
 });
 
-console.log(`# of adjectives: ${adjectiveCount}`);
-console.log(`# of adverbs: ${adverbCount}`);
-console.log(`# of nouns: ${nounCount}`);
-console.log(`# of verbs: ${verbCount}`);
+const adjectiveCount = outputAdjectives.length;
+const adverbCount = outputAdverbs.length;
+const nounCount = outputNouns.length;
+const verbCount = outputVerbs.length;
+
+$("#adjective-count").append(adjectiveCount);
+$("#adverb-count").append(adverbCount);
+$("#noun-count").append(nounCount);
+$("#verb-count").append(verbCount);
+
+// console.log(`# of adjectives: ${adjectiveCount}`);
+// console.log(`# of adverbs: ${adverbCount}`);
+// console.log(`# of nouns: ${nounCount}`);
+// console.log(`# of verbs: ${verbCount}`);
 
 
 

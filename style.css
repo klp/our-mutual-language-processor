@@ -4,3 +4,27 @@
     padding: 2em;
 }
 
+.box {
+    margin: 0 auto;
+}
+
+#adjective-count, #adverb-count, #noun-count, #verb-count {
+    font-size: 2.5rem;
+}
+
+#adjective-count {
+    color: turquoise;
+}
+
+#adverb-count {
+    color:cadetblue;
+}
+
+#noun-count {
+    color:deepskyblue;
+}
+
+#verb-count{
+    color: crimson;
+    margin: 0 auto;
+}

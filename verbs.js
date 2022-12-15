@@ -6,5 +6,5 @@ const outputVerbs = verbs.map(function(verb){
 });
 
 outputVerbs.forEach(function(verb) {
-    $("#verbs").append(verb + ", ");
+    $("#verbs").append("<li>" + verb + "</li>");
 });

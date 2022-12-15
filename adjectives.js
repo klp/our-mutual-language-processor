@@ -6,5 +6,5 @@ const outputAdjectives = adjectives.map(function(adjective){
 });
 
 outputAdjectives.forEach(function(adjective) {
-    $("#adjectives").append(adjective + ", ");
+    $("#adjectives").append("<li>" + adjective + "</li>");
 });

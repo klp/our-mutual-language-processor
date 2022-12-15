@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Our Mutual Language Processor</title>
 </head>
@@ -64,33 +65,24 @@
     </div>
   </nav>
     <div class="content">
-      <h1>Filter Verbs</h1>
+      <h1>About this project</h1>
       <p>
-        This first exercise is fairly straight forward. We process the text of 
-        Charles Dickens' "Our Mutual Friend" using a Javascript library called
-        <a href="https://compromise.cool/">Compromise</a>. This creates a large 
-        object with a ton of data. To simplify my operations, filter by four 
-        parts of speech tags <span>&#8212;</span> adjectives, adverbs, nouns, and
-        verbs <span>&#8212;</span> and convert each filter POS into an array to 
-        ease subsequent operations. Finally, I map over the arrays for each POS,
-        and append the words for each POS to an id element.
+        This site was created as a final project for an introduction to 
+        Javascript course called <i>The JavaScripting Master's Student</i>
+        in the Fall semester 2022.
+      </p>
+      <p>A link to the Github repo is 
+        <a href="https://github.com/klp/our-mutual-language-processor">here</a>.
       </p>
       <p>
-        On this page, we're filtering verbs.
+        Powered by:
+          <ul>
+            <li><a href="https://bulma.io/">Bulma</a></li>
+            <li><a href="https://compromise.cool/">Compromise</a></li>
+            <li><a href="https://pages.github.com/">GitHub Pages</a></li>
+            <li><a href="https://jquery.com/">jQuery slim</a></li>
+          </ul>
       </p>
-      <h2>Verbs</h2>
-          <div class="container">
-            <div class="list-columns">
-                <ul id="verbs"></ul>
-            </div>
-          </div>
-      </div>
-    <script src="text.js" defer></script>
-    <script src="https://unpkg.com/compromise@14.8.0/builds/compromise.js" defer></script>
-    <script src="verbs.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-    crossorigin="anonymous"></script>
-    </script>
+    </div>
 </body>
 </html>

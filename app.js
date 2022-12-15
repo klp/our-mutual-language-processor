@@ -46,11 +46,6 @@ $("#adverb-count").append(adverbCount);
 $("#noun-count").append(nounCount);
 $("#verb-count").append(verbCount);
 
-// console.log(`# of adjectives: ${adjectiveCount}`);
-// console.log(`# of adverbs: ${adverbCount}`);
-// console.log(`# of nouns: ${nounCount}`);
-// console.log(`# of verbs: ${verbCount}`);
-
 
 
 

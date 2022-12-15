@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Mutual Language Processor</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://klp.github.io/our-mutual-language-processor/">
+            <img src="31670619.png" width="27" height="27">
+          </a>
+        
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Filtering Parts of Speech
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="adjectives.html">
+                  Adjectives
+                </a>
+                <a class="navbar-item" href="adverbs.html">
+                  Adverbs
+                </a>
+                <a class="navbar-item" href="nouns.html">
+                  Nouns
+                </a>
+                <a class="navbar-item" href="verbs.html">
+                  Verbs
+                </a>
+                <a class="navbar-item" href="filter-pos.html">
+                  Filtering All Parts of Speech (slow)
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="count-pos.html">
+                  Part of Speech Counts
+                </a>
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+              <a class="navbar-item">
+                About
+              </a>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+      <h1>Select a Random Phrase from the Text</h1>
+      <p>
+        On this page, we select a random "sentence," at least as far as
+        Compromise is concerned. The page is renamed <i>Select a Random Phrase 
+        from the Text</i> because Compromises sentence parsing doesn't appear to
+        work that well with large, complicated texts.
+      </p>
+      <h2>Random Phrase</h2>
+          <div class="container">
+              <div id="select-random-phrase"></div>
+          </div>
+      </div>
+    <script src="text.js" defer></script>
+    <script src="https://unpkg.com/compromise@14.8.0/builds/compromise.js" defer></script>
+    <script src="sentences.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+    crossorigin="anonymous"></script>
+    </script>
+</body>
+</html>

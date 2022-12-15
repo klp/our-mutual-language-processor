@@ -74,30 +74,22 @@
     </div>
   </nav>
     <div class="content">
-      <h1>Filter Adverbs</h1>
+      <h1>Select a Random Phrase from the Text</h1>
       <p>
-        This first exercise is fairly straight forward. We process the text of 
-        Charles Dickens' "Our Mutual Friend" using a Javascript library called
-        <a href="https://compromise.cool/">Compromise</a>. This creates a large 
-        object with a ton of data. To simplify my operations, filter by four 
-        parts of speech tags <span>&#8212;</span> adjectives, adverbs, nouns, and
-        verbs <span>&#8212;</span> and convert each filter POS into an array to 
-        ease subsequent operations. Finally, I map over the arrays for each POS,
-        and append the words for each POS to an id element.
+        On this page, we select a random "sentence," at least as far as
+        Compromise is concerned. The page is renamed <i>Select a Random Phrase 
+        from the Text</i> because Compromises sentence parsing doesn't appear to
+        work that well with large, complicated texts. I still find it whimsical,
+        so I kept the results in the project!
       </p>
-      <p>
-        On this page, we're filtering adverbs.
-      </p>
-      <h2>Adverbs</h2>
+      <h2>Random Phrase</h2>
           <div class="container">
-            <div class="list-columns">
-                <ul id="adverbs"></ul>
-              </div>
+              <div id="select-random-phrase"></div>
           </div>
       </div>
     <script src="text.js" defer></script>
     <script src="https://unpkg.com/compromise@14.8.0/builds/compromise.js" defer></script>
-    <script src="adverbs.js" defer></script>
+    <script src="sentences.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
     crossorigin="anonymous"></script>

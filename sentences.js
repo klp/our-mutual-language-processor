@@ -1,4 +1,4 @@
-const doc = nlp(removedText);
+const doc = nlp(originalText);
 
 // return an array of sentences
 const sentenceArray = doc.json().map(o=> o.text);

@@ -8,12 +8,16 @@
     columns: 4;
 }
 
+.columns {
+    padding-top: 1rem;
+}
+
 .box {
     margin: 0 auto;
     max-height: 145px;  /* not the prettiest solution */
 }
 
-#adjective-count, #adverb-count, #noun-count, #verb-count {
+#adjective-count, #adverb-count, #noun-count, #sentence-count, #verb-count, #word-count {
     font-size: 2.5rem;
 }
 
@@ -29,6 +33,10 @@
     color:deepskyblue;
 }
 
-#verb-count{
+#verb-count {
     color: crimson;
+}
+
+#sentence-count {
+    color: goldenrod;
 }

@@ -6,5 +6,5 @@ const outputNouns = nouns.map(function(noun){
 });
 
 outputNouns.forEach(function(noun) {
-    $("#nouns").append(noun + ", ");
+    $("#nouns").append("<li>" + noun + "</li>");
 });

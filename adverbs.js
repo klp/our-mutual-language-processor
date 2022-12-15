@@ -6,5 +6,5 @@ const outputAdverbs = adverbs.map(function(adverb){
 });
 
 outputAdverbs.forEach(function(adverb) {
-    $("#adverbs").append(adverb + ", ");
+    $("#adverbs").append("<li>" + adverb + "</li>");
 });

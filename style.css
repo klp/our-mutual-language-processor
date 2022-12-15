@@ -4,6 +4,10 @@
     padding: 2em;
 }
 
+.list-columns ul {
+    columns: 4;
+}
+
 .box {
     margin: 0 auto;
     max-height: 145px;  /* not the prettiest solution */

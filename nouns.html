@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Mutual Language Processor</title>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://klp.github.io/our-mutual-language-processor/">
+            <img src="31670619.png" width="27" height="27">
+          </a>
+        
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Experiments
+              </a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="filter-pos.html">
+                  Filtering Parts of Speech
+                </a>
+                <a class="navbar-item" href="count-pos.html">
+                  Part of Speech Counts
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+              <a class="navbar-item">
+                About
+              </a>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="content">
+      <h1>Filter together parts of speech</h1>
+      <p>
+        This first exercise is fairly straight forward. We process the text of 
+        Charles Dickens' "Our Mutual Friend" using a Javascript library called
+        <a href="https://compromise.cool/">Compromise</a>. This creates a large 
+        object with a ton of data. To simplify my operations, filter by four 
+        parts of speech tags <span>&#8212;</span> adjectives, adverbs, nouns, and
+        verbs <span>&#8212;</span> and convert each filter POS into an array to 
+        ease subsequent operations. Finally, I map over the arrays for each POS,
+        and append the words for each POS to an id element.
+      </p>
+      <p>
+        On this page, we're filtering nouns.
+      </p>
+      <h2>Nouns</h2>
+          <div class="container">
+              <div id="nouns"></div>
+          </div>
+      </div>
+    <script src="text.js" defer></script>
+    <script src="https://unpkg.com/compromise@14.8.0/builds/compromise.js" defer></script>
+    <script src="nouns.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+    crossorigin="anonymous"></script>
+    </script>
+</body>
+</html>

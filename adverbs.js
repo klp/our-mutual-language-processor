@@ -1,5 +1,6 @@
 const doc = nlp(removedText);
 const adverbs = doc.adverbs().out('array');
+
 const outputAdverbs = adverbs.map(function(adverb){
     return adverb;
 });
